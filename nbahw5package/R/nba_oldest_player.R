@@ -11,5 +11,3 @@ nba_oldest_player <- function(year){
   nba_oldest_player<- filter(year_of_interest, Age==max(year_of_interest$Age))
   head(nba_oldest_player, 1)
 }
-
-nba_oldest_player(1995)
