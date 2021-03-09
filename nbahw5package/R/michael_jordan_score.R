@@ -8,6 +8,7 @@
 #' michael_jordan_score()
 michael_jordan_score <- function(year){
   year_of_interest <- dplyr::filter(d,Year==year)
-  michael <- dplyr::filter (year_of_interest, Player==(as.character("Michael Jordan*")))
+  michael <- dplyr::filter (year_of_interest, Player==(as.numeric("Michael Jordan*")))
   return(michael)
 }
+michael_jordan_score(2003)
