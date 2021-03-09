@@ -5,7 +5,7 @@
 #' @keywords michael jordan score
 #' @export
 #' @examples
-#' highest_mj_score()
+#' michael_jordan_score()
 michael_jordan_score <- function(year){
   year_of_interest <- dplyr::filter(d,Year==year)
   michael <- dplyr::filter (year_of_interest, Player=="Michael Jordan*")
