@@ -10,4 +10,3 @@ michael_jordan_score <- function(year){
   year_of_interest <- dplyr::filter(d,Year==year)
   michael <- dplyr::filter (year_of_interest, Player=="Michael Jordan*")
   return(michael)
-}
