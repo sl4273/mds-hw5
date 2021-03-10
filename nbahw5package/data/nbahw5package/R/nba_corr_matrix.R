@@ -7,7 +7,7 @@
 #' @examples
 #' continuous_correlation()
 nba_corr_matrix <- function(year){
-  year_of_interest <- dplyr::filter(d, Year == year)
+  year_of_interest <- dplyr::filter(data, Year == year)
   year_of_interest_num_cont <- year_of_interest[,sapply(year_of_interest,is.numeric)] ##like housing hw
   return(cor(year_of_interest_num_cont))
   }

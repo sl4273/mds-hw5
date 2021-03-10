@@ -7,7 +7,7 @@
 #' @examples
 #' nba_oldest_player()
 nba_oldest_player <- function(year){
-  year_of_interest <- dplyr::filter(d, Year == year)
+  year_of_interest <- dplyr::filter(data, Year == year)
   nba_oldest_player<- filter(year_of_interest, Age==max(year_of_interest$Age))
   head(nba_oldest_player, 1)
 }

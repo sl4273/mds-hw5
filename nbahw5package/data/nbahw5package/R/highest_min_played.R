@@ -7,7 +7,7 @@
 #' @examples
 #' highest_min_played()
 highest_min_played <- function(year){
-  year_of_interest <- dplyr::filter(d, Year == year)
+  year_of_interest <- dplyr::filter(data, Year == year)
   max_minutes <- (dplyr::filter(d, MP == max(year_of_interest$MP)))
   head(max_minutes, 1)
 }
